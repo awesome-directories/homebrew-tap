@@ -3,36 +3,33 @@ cask "awesome-directories" do
   name "awesome-directories"
   desc "CLI tool for awesome-directories.com - Discover directories for your SaaS"
   homepage "https://awesome-directories.com"
-  version "1.0.4"
+  version "1.0.7"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "awesome-directories"
-  bash_completion "./completions/awesome-directories.bash"
-  zsh_completion "./completions/awesome-directories.zsh"
-  fish_completion "./completions/awesome-directories.fish"
 
   on_macos do
     on_intel do
       url "https://github.com/awesome-directories/cli/releases/download/v#{version}/cli_darwin_amd64.tar.gz"
-      sha256 "15f97ec02553bd6f8febcdb4bd64f2d363ffeb6702b24808eb6252368b18dfdb"
+      sha256 "b46f808c00c3750074ceedd4e5cfe808611a1a7af57112cb845f3bdc50a63273"
     end
     on_arm do
       url "https://github.com/awesome-directories/cli/releases/download/v#{version}/cli_darwin_arm64.tar.gz"
-      sha256 "cdf672763b763b55b5c9a89c1b0faee6ef453df09ebada7a9b704b19fb3ba104"
+      sha256 "1da119a72555d3a6d110bd879d660d86dd0f129aad9ab49e036ae75cf93d0730"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/awesome-directories/cli/releases/download/v#{version}/cli_linux_amd64.tar.gz"
-      sha256 "70d16fa171ad82a690c1c4c4ba43de237701b4827bc3a07ee5209adda1fa93b5"
+      sha256 "bd1276e8e1d7c9aaa7f4c39ec04eeb2998cc5bb8dd887b350c16c3ae8c9a1d80"
     end
     on_arm do
       url "https://github.com/awesome-directories/cli/releases/download/v#{version}/cli_linux_arm64.tar.gz"
-      sha256 "9ce44abe6cf44dec2224a131842af24800b6bd04769049b692174e7ad7b2e0c6"
+      sha256 "365e02b79b1c105824a37c6bb793d98e899b9efb1cbcb109dff66a78cca13d26"
     end
   end
 
